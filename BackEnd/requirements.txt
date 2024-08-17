@@ -1,1 +1,1 @@
-pip install fastapi uvicorn torch diffusers safetensors huggingface_hub pillow
+pip install fastapi uvicorn torch diffusers safetensors huggingface_hub pillow numpy==1.24.1
