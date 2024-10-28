@@ -25,7 +25,7 @@ dtype = torch.float32
 step = 4  # Options: [1, 2, 4, 8]
 repo = "ByteDance/AnimateDiff-Lightning"
 ckpt = f"animatediff_lightning_{step}step_diffusers.safetensors"
-base = "emilianJR/epiCRealism"  # Choose your favorite base model.
+base = "emilianJR/epiCRealism" 
 
 adapter = MotionAdapter().to(device, dtype)
 adapter.load_state_dict(load_file(hf_hub_download(repo, ckpt), device=device))
